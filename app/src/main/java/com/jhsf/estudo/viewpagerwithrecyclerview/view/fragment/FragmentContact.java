@@ -43,11 +43,14 @@ public class FragmentContact extends Fragment {
         super.onCreate(savedInstanceState);
 
         lstContacts = new ArrayList<>();
-        for(int i = 0; i < 15; i++) {
-            if(i % 2 == 0)
-                lstContacts.add(new Contact("Men", "(61) 9999-9999", R.drawable.icon_men));
-            else
-            lstContacts.add(new Contact("Women", "(61) 8888-8888", R.drawable.icon_women));
+            lstContacts.add(new Contact("Seu Jorge", "(61) 9999-9999", R.drawable.man));
+            lstContacts.add(new Contact("Amanda", "(55) 8888-8888", R.drawable.girl));
+            lstContacts.add(new Contact("Roberto", "(11) 7777-7777", R.drawable.man1));
+            lstContacts.add(new Contact("Aniely", "(61) 6666-6666", R.drawable.girl1));
+            lstContacts.add(new Contact("Diego", "(41) 5555-5555", R.drawable.boy));
+            lstContacts.add(new Contact("Marcos", "(62) 4444-4444", R.drawable.man2));
+            lstContacts.add(new Contact("Tiago", "(20) 3333-3333", R.drawable.boy1));
+            lstContacts.add(new Contact("Fabio", "(14) 2222-2222", R.drawable.man3));
+            lstContacts.add(new Contact("Augusto", "(81) 1111-1111", R.drawable.man4));
         }
     }
-}

@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Contatos");
 
         tabLayout = findViewById(R.id.tablelayout_id);
         viewPager = findViewById(R.id.viewpager_id);
@@ -39,6 +40,5 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_call);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_group);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_favorite);
-
     }
 }

@@ -7,10 +7,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -54,14 +54,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 dialogNameTv.setText(data.get(vHolder.getAdapterPosition()).getName());
                 dialogPhoneTv.setText(data.get(vHolder.getAdapterPosition()).getPhone());
                 dialogContactImage.setImageResource(data.get(vHolder.getAdapterPosition()).getPhoto());
-
-                Toast.makeText(context, "Test Click" + String.valueOf
-                        (vHolder.getAdapterPosition()),Toast.LENGTH_SHORT).show();
                 dialog.show();
             }
         });
-
-
         return vHolder;
     }
 
